@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 20px;
+    background: #f3f3f3;
+}
+img {
+    height: 80px;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.productsWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+.btn {
+    border: none;
+    outline: none;
+    background: #764abc;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #513282;
+}
+
+.heading {
+    padding: 25px 0;
+}
+.cartCount {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.navLink {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+.cartCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .productsWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .btn {
+        padding: 8px 16px;
+    }
+}
